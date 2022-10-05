@@ -1,1 +1,1 @@
-# 09-NodeJS-Challenge
+{"title":"FindFlix","motive":"Trying to help people find their perfect movie. ","why":"Spread the love of movie to others. ","solved":"Saturday entertainment.","lesson":"Incorporate JavaScript and APIs to retrieve search result.","special":"UX and UI oriented"}
