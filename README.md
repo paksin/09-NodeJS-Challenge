@@ -1,12 +1,12 @@
 
-![License](https://img.shields.io/badge/license-Unlicense-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-# Findflix 
-https://github.com/paksin/Findflix
+# 09-NodeJS-Challenge 
+https://github.com/paksin/09-NodeJS-Challenge
 
 ## Description    
 
-A movie information site for users that to find out more about films and favourite them. In the description, there will be a short plot, movie ratings, youtube player with that film’s trailer, and more.
+Creating a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. 
 
 [Installation](#installation)
 
@@ -18,11 +18,11 @@ A movie information site for users that to find out more about films and favouri
 
 ## Installation
 
-Just open the deployed URL here: https://keysbhag.github.io/FindFlix-Project
+Simply clone from https://github.com/paksin/09-NodeJS-Challenge and run in command-line.
 
 ## Usage 
 
-Anyone
+The application will be invoked by using the following command: node index.js
 
 ## Contributing
 
@@ -30,11 +30,11 @@ Anyone
 
 ## Tests
 
-Feel free to fork on GitHub and test.
+Feel free to fork it on GitHub and test.
 
 ## License
 
-This project is licensed under the Other license.
+This project is licensed under the MIT license.
 
 ## Questions
 
