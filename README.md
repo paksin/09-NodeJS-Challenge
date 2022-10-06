@@ -6,15 +6,19 @@ https://github.com/paksin/09-NodeJS-Challenge
 
 ## Description    
 
-Creating a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. 
+Creating a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
 
 [Installation](#installation)
 
 [Usage](#usage)
 
-[Credits](#credits)
+[Contributing](#contributing)
+
+[Tests](#tests)
 
 [License](#license)
+
+[Questions](#questions)
 
 ## Installation
 
@@ -30,7 +34,7 @@ Anyone
 
 ## Tests
 
-Feel free to fork it on GitHub and test.
+Feel free to fork it on GitHub and test on your own.
 
 ## License
 
