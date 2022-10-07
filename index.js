@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const markdown = require('./utils/generateMarkdown');
+
 
 
 // TODO: Create an array of questions for user input
@@ -18,73 +20,9 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    var licenseBadge;
-    switch (data.license) {
-        case 'MIT':
-            licenseBadge = "https://img.shields.io/badge/License-MIT-yellow.svg";
-            break;
-        case 'GPLv2':
-            licenseBadge = "https://img.shields.io/badge/License-GPL_v2-blue.svg";
-            break;
-        case 'Apache':
-            licenseBadge = "https://img.shields.io/badge/License-Apache_2.0-blue.svg";
-            break;
-        case 'GPLv3':
-            licenseBadge = "https://img.shields.io/badge/License-GPLv3-blue.svg";
-            break;
-        default:
-            licenseBadge = "https://img.shields.io/badge/license-Unlicense-blue.svg"
-            break;
-    }
+
     fs.writeFile(fileName,
-        `
-![License](${licenseBadge})
-
-# ${data.title} 
-https://github.com/${data.username}/${data.title}
-
-## Description    
-
-${data.description}
-
-[Installation](#installation)
-
-[Usage](#usage)
-
-[Contributing](#contributing)
-
-[Tests](#tests)
-
-[License](#license)
-
-[Questions](#questions)
-
-## Installation
-
-${data.installation}
-
-## Usage 
-
-${data.usage}
-
-## Contributing
-
-${data.contributing}
-
-## Tests
-
-${data.tests}
-
-## License
-
-This project is licensed under the ${data.license} license.
-
-## Questions
-
-If you have any inquiries about my repository, please feel free to reach out through GitHub or email: ${data.email}
-
-https://github.com/${data.username}
-    `, (err) => err ? console.error(err) : console.log('Success!'))
+        markdown(data), (err) => err ? console.error(err) : console.log('Success!'))
 }
 
 // TODO: Create a function to initialize app
@@ -124,7 +62,7 @@ function init() {
                 type: 'list',
                 message: questions[6],
                 name: 'license',
-                choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3', 'Other', ]
+                choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3', 'No License', ]
             },
             {
                 type: 'input',
