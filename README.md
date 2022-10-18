@@ -3,6 +3,9 @@
 
 # 09-NodeJS-Challenge 
 https://github.com/paksin/09-NodeJS-Challenge
+
+## Walkthrough Video
+https://drive.google.com/file/d/1Lg5CxtpGIhec2LIe5ZVTdrbK7uSWp2Zv/view
   
 ## Description    
   
